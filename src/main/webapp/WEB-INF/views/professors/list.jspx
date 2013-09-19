@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_malsolo_courses_domain_Professor" items="${professors}" z="3l+0iRmJD01OCmdEY8QDfe9Wa/g=">
+        <table:table data="${professors}" id="l_com_malsolo_courses_domain_Professor" path="/professors" z="qeA3w4T7SYs60ao88JPbSdL6xow=">
+            <table:column id="c_com_malsolo_courses_domain_Professor_name" property="name" z="LpYjQOeogEYiqhIKLiwZLW4KQIY="/>
+            <table:column id="c_com_malsolo_courses_domain_Professor_lastName" property="lastName" z="z4cRoA+Gk6RonJKFJciVTuaU7sc="/>
+            <table:column id="c_com_malsolo_courses_domain_Professor_secondLastName" property="secondLastName" z="A6NjR/VSqR2yq3OV6DyONQv1H6o="/>
+        </table:table>
+    </page:list>
+</div>

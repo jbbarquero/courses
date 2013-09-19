@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_malsolo_courses_domain_Course" items="${courses}" z="qcZO0l37xejaCfDGD6XMy/HtfPM=">
+        <table:table data="${courses}" id="l_com_malsolo_courses_domain_Course" path="/courses" z="hRtBk4togLSXJ8gu2WHvhfgcz2E=">
+            <table:column id="c_com_malsolo_courses_domain_Course_title" property="title" z="Ncrg1kSzK6W2ZmYBcIgtUnypyFI="/>
+            <table:column id="c_com_malsolo_courses_domain_Course_status" property="status" z="13w9imdzdz+kdWZlhMnvZNxBxDM="/>
+            <table:column id="c_com_malsolo_courses_domain_Course_hours" property="hours" z="96V5rpgDiXl3Ga9+kDWXrlmya40="/>
+            <table:column id="c_com_malsolo_courses_domain_Course_active" property="active" z="BApB1n2ZbxoENP6t49TLP0tlVnU="/>
+            <table:column id="c_com_malsolo_courses_domain_Course_professor" property="professor" z="/Vshxw/M5P/8UREVsnVA9sgdHPM="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,38 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-09-17 15:41:44
+hint
+project --topLevelPackage com.malsolo.courses
+q
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-09-17 15:43:09
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-09-17 17:05:21
+hint
+jpa setup --database H2_IN_MEMORY --provider HIBERNATE
+hint
+entity jpa --class ~.domain.Professor --activeRecord no --table PROFESORES --testAutomatically 
+hint
+field string --fieldName name --column NOMBRE --sizeMax 50 --notNull 
+field string --fieldName lastName --column APELLIDO_1 --sizeMax 100 --notNull 
+field string --fieldName secondLastName --column APELLIDO_2 --sizeMax 100 --notNull 
+entity jpa --class ~.domain.Course --activeRecord no --table CURSOS --testAutomatically 
+field string --fieldName title --column TITULO --sizeMax 100 --notNull 
+// [failed] field number --type long --fieldName level --column NIVEL
+field number --type long --fieldName status --column NIVEL
+field number --type int --fieldName hours --column HORAS 
+field boolean --fieldName active --column ACTIVO
+field reference --type ~.domain.Professor --fieldName professor --cardinality MANY_TO_ONE --notNull 
+logging setup --level DEBUG
+perform tests
+web mvc setup
+web mvc all --package ~.web
+security setup
+q
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-09-17 17:39:40
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-09-18 06:39:13
+q
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-09-18 06:43:59
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-09-19 06:21:17
+hint
+repository jpa --interface ~.repository.CourseRepository --entity ~.domain.Course
+repository jpa --entity ~.domain.Professor --interface ~.repository.ProfessorRepository
+q
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-09-19 06:26:24
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-09-19 06:26:53

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_malsolo_courses_domain_Course" modelAttribute="course" path="/courses" versionField="Version" z="O9io06tXk1MU4/03nVdRx3Qn124=">
+        <field:textarea field="title" id="c_com_malsolo_courses_domain_Course_title" required="true" z="i+25xG0sa5Ttqfb/b8Z2QyZM4f8="/>
+        <field:input field="status" id="c_com_malsolo_courses_domain_Course_status" z="DzIIFw7rqBgE+QAizU/xVNBAThA="/>
+        <field:input field="hours" id="c_com_malsolo_courses_domain_Course_hours" z="c9aOvob0WCJLIzin6C47h9R3/Xw="/>
+        <field:checkbox field="active" id="c_com_malsolo_courses_domain_Course_active" z="tW+rpku06QXqPYmVUpJiPf9e7dk="/>
+        <field:select field="professor" id="c_com_malsolo_courses_domain_Course_professor" itemValue="id" items="${professors}" path="/professors" required="true" z="MyIeVLEXKnaI3BcdB1rCKuCJOqI="/>
+    </form:update>
+</div>

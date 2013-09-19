@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_malsolo_courses_domain_Course" object="${course}" path="/courses" z="FofUD2UiTigzivEZZkrWGP0RYX8=">
+        <field:display field="title" id="s_com_malsolo_courses_domain_Course_title" object="${course}" z="9Jd2Ejem/kbPd+1E2/cL4RbEPII="/>
+        <field:display field="status" id="s_com_malsolo_courses_domain_Course_status" object="${course}" z="vBrReMXwA1ycQu0rUpRuo52X0ZQ="/>
+        <field:display field="hours" id="s_com_malsolo_courses_domain_Course_hours" object="${course}" z="6kA3xVms6wbSmgNG3mcwBm9cOS8="/>
+        <field:display field="active" id="s_com_malsolo_courses_domain_Course_active" object="${course}" z="TgUib98cb3LkBy0xJhxnt7MmZOg="/>
+        <field:display field="professor" id="s_com_malsolo_courses_domain_Course_professor" object="${course}" z="BolyPFNF/mJUTIhngwT9F+k9W3s="/>
+    </page:show>
+</div>
